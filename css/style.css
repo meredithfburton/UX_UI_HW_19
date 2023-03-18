@@ -1,0 +1,228 @@
+body {
+  margin: 0;
+  font-family: 'outfit', sans-serif;
+}
+header {
+  background-color: white;
+  padding: 15px;
+}
+header ul {
+  float: right;
+  color: black;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+header p {
+  display: inline-block;
+}
+.heroImg {
+  background-color: #AAD9EE;
+  padding: 100px 15px;
+}
+.content {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #FFFFFF;
+}
+button {
+  padding: 15px;
+  background-color: #373738;
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+#button1 {
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+  max-width: 200px;
+  background-color: #373738;
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+#button2 {
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+  max-width: 200px;
+  background-color: #373738;
+  color:white;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+/*--  My Work section coded using CSS flex */
+.myWork{
+  padding: 60px 30px;
+  padding-top: 0;
+}
+.workGrid{
+  display:grid;
+  grid-template-columns:50% 50%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas:
+  "toppicture topcontent"
+  "middlecontent middlepicture"
+  "bottompicture bottomcontent";
+}
+
+.workGrid Img {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: block;
+}
+
+.workGrid Text {
+display: flex;
+align-items: center;
+}
+
+.workImg1{
+grid-area: toppicture;
+}
+
+.workText1{
+  grid-area: topcontent;
+}
+
+.workImg2{
+grid-area: middlepicture;
+}  
+
+.workText2{
+grid-area: middlecontent;
+text-align: right;
+}
+
+.workImg3{
+grid-area: bottompicture;
+}
+        
+.workText3{
+grid-area: bottomcontent;
+}
+
+.workImg1, .workImg2, .workImg3, .workText1, .workText2, .workText3 {
+  padding: 80px
+}
+
+/*--  My UX Skills section coded using CSS flex */
+.mySkills{
+  padding: 60px 30px;
+  padding-top: 0;
+}
+
+.flexContainer{
+  display:flex;
+  flex-direction:row;
+}
+
+.flexChild{
+  background-color: #AAD9EE;
+  width: 33%;
+  padding:50px;
+  margin: 10px;
+}
+
+footer {
+  background-color: #373738;
+  padding: 5px;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+  font-family: 'outfit', sans-serif;
+}
+
+
+/*Particles*/
+body{ 
+  margin:0; 
+  font:normal 75% 'outfit', sans-serif; 
+} 
+canvas{ 
+  display: block;  
+} 
+/* ---- particles.js container ---- */ 
+#particles-js{ 
+  position:absolute; 
+  width: 100%; 
+  height: 30%; 
+  background-color: #00008B; 
+  background-image: url(""); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: 50% 50%; 
+} 
+  /* ---- stats.js ---- */ 
+  .count-particles{ 
+    background: transparent; 
+    position: absolute; 
+    top: 48px; 
+    left: 0; 
+    width: 80px; 
+    color: transparent; 
+    font-size: .8em; 
+    text-align: left; 
+    text-indent: 4px; 
+    line-height: 14px; 
+    padding-bottom: 2px; 
+    font-family: Helvetica, Arial, sans-serif; 
+    font-weight: bold; 
+  } 
+
+  .goCrazy{
+    color: white;
+    text-align: center;
+    justify-content: center;
+  }
+  .js-count-particles{ 
+    font-size: 1.1em; 
+  } 
+  #stats, .count-particles{  
+    margin-top: 5px; 
+    margin-left: 5px; 
+  } 
+  #stats{ 
+    border-radius: 3px 3px 0 0; 
+    overflow: hidden; 
+  } 
+  .count-particles{ 
+    border-radius: 0 0 3px 3px; 
+  }
+
+@media all and (max-width:700px) {
+  .flexContainer{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .flexChild{
+    width: 100%;
+  }
+
+  .workGrid{
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "toppicture"
+      "topcontent"
+      "middlepicture"
+      "middlecontent"
+      "bottompicture"
+      "bottomcontent"
+    ;
+  }
+}
