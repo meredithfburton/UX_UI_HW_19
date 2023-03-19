@@ -4,7 +4,7 @@ console.log("Hello world!");
 //Hide a div
 $( ".hideMe" ).hide();
 
-$( document.body ).click(function () {
+$(button1).click(function () {
   if ( $( ".hideMe" ).first().is( ":hidden" ) ) {
     $( ".hideMe" ).slideDown( "slow" );
   } else {

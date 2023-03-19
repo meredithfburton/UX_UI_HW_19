@@ -12,21 +12,31 @@ header ul {
 }
 header li {
   display: inline-block;
+  justify-content: center;
+  font-size: large;
   padding: 0px 5px;
 }
+
 header p {
   display: inline-block;
 }
+
 .heroImg {
   background-color: #AAD9EE;
   padding: 100px 15px;
 }
-.content {
-  max-width: 300px;
-  margin: 0 auto;
-  padding: 50px;
-  background-color: #FFFFFF;
+
+h1{
+  font-size: 30px;
 }
+
+h3{
+  font-size:20px;
+}
+p{
+  font-size: 20px;
+}
+
 button {
   padding: 15px;
   background-color: #373738;
@@ -35,29 +45,41 @@ button {
   border-radius: 4px;
 }
 
-#button1 {
-  margin: auto;
-  padding: 15px;
-  text-align: center;
-  max-width: 200px;
-  background-color: #373738;
-  color: white;
-  font-size: 15px;
-  border-radius: 4px;
+/*-- About Section --*/
+.content2{
+  margin:auto;
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  padding: 50px;
+  background-color: #AAD9EE;
 }
 
-#button2 {
-  margin: auto;
-  padding: 15px;
-  text-align: center;
-  max-width: 200px;
-  background-color: #373738;
-  color:white;
-  font-size: 15px;
-  border-radius: 4px;
+.picMe{
+  margin: 10px;
 }
 
-/*--  My Work section coded using CSS flex */
+.aboutText{
+  max-width: 450px;
+  padding-top: 100px;
+  padding-left: 50px;
+  margin: 10px;
+
+}
+
+.Arrow{
+  background-color: #AAD9EE;
+}
+
+#arrow{
+  margin:auto;
+  padding-bottom:25px;
+  display: flex;
+  justify-content: center;
+}
+
+
+/*--  My Work section coded using CSS Grid */
 .myWork{
   padding: 60px 30px;
   padding-top: 0;
@@ -73,15 +95,15 @@ button {
 }
 
 .workGrid Img {
-  width: 100%;
+  display: block;
+  width:100%;
   max-width: 1500px;
   margin: 0 auto;
-  display: block;
 }
 
 .workGrid Text {
-display: flex;
 align-items: center;
+display:flex;
 }
 
 .workImg1{
@@ -90,6 +112,7 @@ grid-area: toppicture;
 
 .workText1{
   grid-area: topcontent;
+  margin-top: 90px;
 }
 
 .workImg2{
@@ -99,6 +122,7 @@ grid-area: middlepicture;
 .workText2{
 grid-area: middlecontent;
 text-align: right;
+margin-top:90px;
 }
 
 .workImg3{
@@ -107,11 +131,33 @@ grid-area: bottompicture;
         
 .workText3{
 grid-area: bottomcontent;
+margin-top:90px;
+}
+
+.workText1 h1, .workText2 h1, .workText3 h1{
+  font-size: 30px;
+}
+
+.workText1 p, .workText2 p, .workText3 p{
+  font-size: 20px;
 }
 
 .workImg1, .workImg2, .workImg3, .workText1, .workText2, .workText3 {
   padding: 80px
 }
+
+#button1 {
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+  max-width: 200px;
+  background-color: #373738;
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+
 
 /*--  My UX Skills section coded using CSS flex */
 .mySkills{
@@ -128,13 +174,17 @@ grid-area: bottomcontent;
   background-color: #AAD9EE;
   width: 33%;
   padding:50px;
-  margin: 10px;
+  margin:10px;
 }
 
+
 footer {
-  background-color: #373738;
+  background-color: #aad9ee;
   padding: 5px;
-  color: white;
+  color:#373738;
+
+  font-size: smaller;
+  text-align: center;
 }
 footer ul {
   list-style: none;
@@ -204,6 +254,12 @@ canvas{
   }
 
 @media all and (max-width:700px) {
+
+  .content2{
+    display:flex;
+    flex-direction:column;
+  }
+
   .flexContainer{
     display:flex;
     flex-direction:column;
