@@ -78,6 +78,10 @@ button {
   justify-content: center;
 }
 
+.bounceMe{
+  animation: bounceArrow .7s infinite;
+}
+
 /*--  My Work section coded using CSS Grid */
 
 .workGrid{
@@ -108,7 +112,6 @@ grid-area: toppicture;
 
 .workText1{
   grid-area: topcontent;
-  margin-top: 70px;
 }
 
 .workImg2{
@@ -118,7 +121,6 @@ grid-area: middlepicture;
 .workText2{
 grid-area: middlecontent;
 text-align: right;
-margin-top:70px;
 }
 
 .workImg3{
@@ -127,7 +129,6 @@ grid-area: bottompicture;
         
 .workText3{
 grid-area: bottomcontent;
-margin-top:70px;
 }
 
 .workText1 h1, .workText2 h1, .workText3 h1{
@@ -175,7 +176,7 @@ margin-top:70px;
 
 
 footer {
-  background-color: #aad9ee;
+  background-color: #AAD9EE;
   padding: 5px;
   color:#373738;
 
