@@ -13,7 +13,7 @@ header ul {
 header li {
   display: inline-block;
   justify-content: center;
-  font-size: large;
+  font-size: small;
   padding: 0px 5px;
 }
 
@@ -27,14 +27,14 @@ header p {
 }
 
 h1{
-  font-size: 30px;
+  font-size: 25px;
 }
 
 h3{
-  font-size:20px;
+  font-size:16px;
 }
 p{
-  font-size: 20px;
+  font-size: 16px;
 }
 
 button {
@@ -51,7 +51,7 @@ button {
   display:flex;
   flex-direction:row;
   justify-content: center;
-  padding: 50px;
+  padding: 25px;
   background-color: #AAD9EE;
 }
 
@@ -61,7 +61,7 @@ button {
 
 .aboutText{
   max-width: 450px;
-  padding-top: 100px;
+  padding-top: 120px;
   padding-left: 50px;
   margin: 10px;
 
@@ -73,16 +73,13 @@ button {
 
 #arrow{
   margin:auto;
-  padding-bottom:25px;
+  padding-bottom:12px;
   display: flex;
   justify-content: center;
 }
 
 /*--  My Work section coded using CSS Grid */
-.myWork{
-  padding: 60px 30px;
-  padding-top: 0;
-}
+
 .workGrid{
   display:grid;
   grid-template-columns:50% 50%;
@@ -96,7 +93,7 @@ button {
 .workGrid Img {
   display: block;
   width:100%;
-  max-width: 1500px;
+  max-width: 1700px;
   margin: 0 auto;
 }
 
@@ -111,7 +108,7 @@ grid-area: toppicture;
 
 .workText1{
   grid-area: topcontent;
-  margin-top: 90px;
+  margin-top: 70px;
 }
 
 .workImg2{
@@ -121,7 +118,7 @@ grid-area: middlepicture;
 .workText2{
 grid-area: middlecontent;
 text-align: right;
-margin-top:90px;
+margin-top:70px;
 }
 
 .workImg3{
@@ -130,15 +127,15 @@ grid-area: bottompicture;
         
 .workText3{
 grid-area: bottomcontent;
-margin-top:90px;
+margin-top:70px;
 }
 
 .workText1 h1, .workText2 h1, .workText3 h1{
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .workText1 p, .workText2 p, .workText3 p{
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .workImg1, .workImg2, .workImg3, .workText1, .workText2, .workText3 {
