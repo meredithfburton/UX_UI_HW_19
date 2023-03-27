@@ -45,6 +45,16 @@ button {
   border-radius: 4px;
 }
 
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:link:active, a:visited:active {
+  color: white;
+  text-decoration: none;
+}
+
 /*-- About Section --*/
 .content2{
   margin:auto;
